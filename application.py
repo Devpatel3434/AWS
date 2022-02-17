@@ -176,9 +176,9 @@ def confirm():
 
     userotp = request.form['otp']
     if otp == int(userotp):
-        session['logged_in'] = True
-        return redirect(url_for('index'))
-        # return render_template('home.html')
+        #session['logged_in'] = True
+        # return redirect(url_for('index'))
+        return render_template('home.html')
         # return " Email verified Success"
     return redirect('/confirm')
 
